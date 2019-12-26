@@ -3,23 +3,48 @@
     <div class="mod-plugin-brand"><h1>{{brand}}</h1></div>
     <div class="mod-plugin-name"><h1>{{label}}</h1></div>
 
+	<div class="midi-type" mod-role="midi-type">
+		<span class="note-on">Note On</span>
+		<span class="note-off">Note Off</span>
+		<span class="poly-aftertouch">Polyphonic</span>
+		<span class="channel-aftertouch">Channel</span>
+		<span class="control-change">Control</span>
+		<span class="program-change">Program</span>
+		<span class="pitch-bend">Pitch</span>
+		<span class="system">System</span>
+	</div>
+
+	<div class="midi-data-type1" mod-role="midi-data-type1">
+		<span class="system">System</span>
+		<span class="channel">Channel</span>
+	</div>
+
+	<div class="midi-data-type2" mod-role="midi-data-type2">
+		<span class="note">Note</span>
+		<span class="controller">Controller</span>
+		<span class="program">Program</span>
+	</div>
+
+	<div class="midi-data-type3" mod-role="midi-data-type3">
+		<span class="velocity">Velocity</span>
+		<span class="pressure">Pressure</span>
+		<span class="pitch">Pitch</span>
+		<span class="data">Data</span>
+	</div>
+
 	<div class="mod-display-group" mod-role="text">
 		<div class="midi_messages" title="MIDI message">
 			<div class="digit-box midi_msg_1">
-				<span class="digits empty">###</span>
-				<span class="digits" mod-role="midi_msg_1"></span>
+				<span class="digits empty">##</span>
+				<span class="digits" mod-role="midi-data1"></span>
 			</div>
 			<div class="digit-box midi_msg_2">
 				<span class="digits empty">###</span>
-				<span class="digits" mod-role="midi_msg_2"></span>
+				<span class="digits" mod-role="midi-data2"></span>
 			</div>
 			<div class="digit-box midi_msg_3">
-				<span class="digits empty">###</span>
-				<span class="digits" mod-role="midi_msg_3"></span>
-			</div>
-			<div class="digit-box midi_msg_4">
-				<span class="digits empty">###</span>
-				<span class="digits" mod-role="midi_msg_4"></span>
+				<span class="digits empty">#####</span>
+				<span class="digits" mod-role="midi-data3"></span>
 			</div>
 		</div>
 	</div>

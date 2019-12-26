@@ -302,7 +302,7 @@
 }
 
 #mod-pedal-{{{cns}}} .digit-box {
-	position: relative;
+	position: absolute;
 	font-family: "FourteenSegments-{{{cns}}}" !important;
 	font-size: 47px;
 	margin-bottom: 1px;
@@ -330,7 +330,57 @@
 	color: #4c4c4c;
 }
 
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_1 { left: 120px; top: 30px; width: 2.5em; }
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_2 { left: 120px; top: 45px; width: 2.5em; }
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 120px; top: 60px; width: 2.5em; }
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_4 { left: 120px; top: 75px; width: 2.5em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_1 { left: 20px; top: 120px; width: 1.8em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_2 { left: 120px; top: 120px; width: 2.5em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 253px; top: 120px; width: 3.92em; }
+
+#mod-pedal-{{{cns}}} .midi-type {
+	position: absolute; left: 20px; top: 50px;
+}
+#mod-pedal-{{{cns}}} .midi-data-type1 {
+	position: absolute; left: 20px; top: 180px;
+}
+#mod-pedal-{{{cns}}} .midi-data-type2 {
+	position: absolute; left: 120px; top: 180px;
+}
+#mod-pedal-{{{cns}}} .midi-data-type3 {
+	position: absolute; left: 253px; top: 180px;
+}
+
+#mod-pedal-{{{cns}}} .midi-type span {
+	display: none;
+	color: black;
+}
+#mod-pedal-{{{cns}}} .midi-data-type1 span {
+	display: none;
+	color: black;
+}
+#mod-pedal-{{{cns}}} .midi-data-type2 span {
+	display: none;
+	color: black;
+}
+#mod-pedal-{{{cns}}} .midi-data-type3 span {
+	display: none;
+	color: black;
+}
+
+#mod-pedal-{{{cns}}} .midi-type.note-off span.note-off { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.note-on span.note-on { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.poly-aftertouch span.poly-aftertouch { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.channel-aftertouch span.channel-aftertouch { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.control-change span.control-change { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.program-change span.program-change { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.pitch-bend span.pitch-bend { display: block; }
+#mod-pedal-{{{cns}}} .midi-type.system span.system { display: block; }
+
+#mod-pedal-{{{cns}}} .midi-data-type1.channel span.channel { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type1.system span.system { display: block; }
+
+#mod-pedal-{{{cns}}} .midi-data-type2.note span.note { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type2.controller span.controller { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type2.program span.program { display: block; }
+
+#mod-pedal-{{{cns}}} .midi-data-type3.pressure span.pressure { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type3.velocity span.velocity { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type3.data span.data { display: block; }
+#mod-pedal-{{{cns}}} .midi-data-type3.pitch span.pitch { display: block; }
