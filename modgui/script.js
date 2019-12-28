@@ -36,7 +36,7 @@ function (event) {
 		case 0xB0:
 			var channel = data1 & 0x0F;
 			return create_result("control-change",
-								 "channel?", channel,
+								 "channel", channel,
 								 "controller", data2,
 								 "data", data3);
 		case 0xC0:
