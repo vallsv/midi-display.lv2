@@ -32,7 +32,6 @@ typedef enum {
     PORT_CONTROL_MSG1,
     PORT_CONTROL_MSG2,
     PORT_CONTROL_MSG3,
-    PORT_CONTROL_MSG4,
 
     // Note: it have to be the last
     PORT_ENUM_SIZE
@@ -125,9 +124,8 @@ static void run(LV2_Handle instance, uint32_t sample_count)
 			*self->parameters[PORT_CONTROL_MSG1].port = -1;
 			*self->parameters[PORT_CONTROL_MSG2].port = -1;
 			*self->parameters[PORT_CONTROL_MSG3].port = -1;
-			*self->parameters[PORT_CONTROL_MSG4].port = -1;
 			for (uint8_t i = 0; i < ev->body.size; i++) {
-				if (PORT_CONTROL_MSG1 + i > PORT_CONTROL_MSG4) {
+				if (PORT_CONTROL_MSG1 + i > PORT_CONTROL_MSG3) {
 					break;
 				}
 				*self->parameters[PORT_CONTROL_MSG1 + i].port = msg[i];

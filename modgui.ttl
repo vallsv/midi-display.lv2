@@ -18,6 +18,5 @@
             [ lv2:symbol "midi_received" ] ,
             [ lv2:symbol "midi_msg_1" ] ,
             [ lv2:symbol "midi_msg_2" ] ,
-            [ lv2:symbol "midi_msg_3" ] ,
-            [ lv2:symbol "midi_msg_4" ] ;
+            [ lv2:symbol "midi_msg_3" ] ;
     ] .
