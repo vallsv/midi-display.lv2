@@ -9,11 +9,11 @@
     background-image:url(/resources/pedals/small-box.png{{{ns}}});
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 480px 231px;
+    background-size: 460px 215px;
     position:absolute;
     border-radius: 21px;
-    width: 480px;
-    height: 231px;
+    width: 460px;
+    height: 215px;
 }
 
 /* = PLUGIN'S AUTHOR
@@ -322,14 +322,14 @@
 	color: #4c4c4c;
 }
 
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_1 { left: 20px; top: 80px; width: 1.8em; }
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_2 { left: 120px; top: 80px; width: 2.5em; }
-#mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 253px; top: 80px; width: 3.92em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_1 { left: 30px; top: 90px; width: 1.8em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_2 { left: 120px; top: 90px; width: 2.5em; }
+#mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 243px; top: 90px; width: 3.92em; }
 
 #mod-pedal-{{{cns}}} .midi-type       { position: absolute; left: 20px; top: 10px; }
-#mod-pedal-{{{cns}}} .midi-data-type1 {	position: absolute; left: 15px; top: 140px; }
-#mod-pedal-{{{cns}}} .midi-data-type2 {	position: absolute; left: 115px; top: 140px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 {	position: absolute; left: 263px; top: 140px; }
+#mod-pedal-{{{cns}}} .midi-data-type1 {	position: absolute; left: 20px; top: 142px; }
+#mod-pedal-{{{cns}}} .midi-data-type2 {	position: absolute; left: 110px; top: 142px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 {	position: absolute; left: 243px; top: 142px; }
 
 #mod-pedal-{{{cns}}} .midi-type > div,
 #mod-pedal-{{{cns}}} .midi-data-type1 > div,
@@ -340,14 +340,14 @@
 	height: 40px;
 }
 
-#mod-pedal-{{{cns}}} .midi-type .note-off { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-type .note-on  { left: 0px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-type .poly-aftertouch { left: 90px; top: 0px; }
-#mod-pedal-{{{cns}}} .midi-type .channel-aftertouch { left: 90px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-type .control-change { left: 180px; top: 0px; }
-#mod-pedal-{{{cns}}} .midi-type .program-change { left: 180px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-type .pitch-bend { left: 270px; top: 0px; }
-#mod-pedal-{{{cns}}} .midi-type .system { left: 270px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-type .note-off { left: 0px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-type .poly-aftertouch { left: 60px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-type .channel-aftertouch { left: 60px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-type .control-change { left: 155px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-type .program-change { left: 155px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-type .pitch-bend { left: 230px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-type .system { left: 230px; top: 40px; }
 
 #mod-pedal-{{{cns}}} .midi-data-type1 .channel { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type1 .system { left: 0px; top: 20px; }
@@ -360,6 +360,23 @@
 #mod-pedal-{{{cns}}} .midi-data-type3 .velocity { left: 0px; top: 20px; }
 #mod-pedal-{{{cns}}} .midi-data-type3 .pitch { left: 70px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 70px; top: 20px; }
+
+#mod-pedal-{{{cns}}} .midi-type h2 {
+	position: absolute;
+	font-weight: 900;
+	font-size: 10px;
+	top: 0px;
+	line-height: 1em;
+	color: black;
+	text-transform: uppercase;
+	margin-left: 34px;
+	border-bottom: 2px solid black;
+}
+
+#mod-pedal-{{{cns}}} .midi-type h2.note { left: 0px; }
+#mod-pedal-{{{cns}}} .midi-type h2.aftertouch { left: 60px; }
+#mod-pedal-{{{cns}}} .midi-type h2.change { left: 155px; }
+#mod-pedal-{{{cns}}} .midi-type h2.other { left: 230px; }
 
 #mod-pedal-{{{cns}}} .midi-type span,
 #mod-pedal-{{{cns}}} .midi-data-type1 span,
