@@ -362,11 +362,11 @@
 #mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 78px; top: 20px; }
 
 #mod-pedal-{{{cns}}} .midi-type h2 {
-	margin: 0px;
+	margin: 0;
 	position: absolute;
 	font-weight: 900;
 	font-size: 10px;
-	top: 0px;
+	top: 8px;
 	line-height: 1em;
 	color: black;
 	text-transform: uppercase;
