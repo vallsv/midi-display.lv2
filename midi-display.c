@@ -121,6 +121,7 @@ static void run(LV2_Handle instance, uint32_t sample_count)
 	while(!lv2_atom_sequence_is_end(&(self->port_events_in)->body, (self->port_events_in)->atom.size, ev)) {
 		if (ev->body.type == self->urid_midiEvent) {
 			msg = (const uint8_t*)(ev + 1);
+			*self->parameters[PORT_CONTROL_RECEIVED].port = 1;
 			*self->parameters[PORT_CONTROL_MSG1].port = -1;
 			*self->parameters[PORT_CONTROL_MSG2].port = -1;
 			*self->parameters[PORT_CONTROL_MSG3].port = -1;

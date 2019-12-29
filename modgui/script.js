@@ -86,6 +86,7 @@ function (event) {
 			bundle_data.node_data_type2 = icon.find('[mod-role=midi-data-type2]');
 			bundle_data.node_data3 = icon.find('[mod-role=midi-data3]');
 			bundle_data.node_data_type3 = icon.find('[mod-role=midi-data-type3]');
+			bundle_data.node_received = icon.find('[mod-role=midi-received]');
 		}
 		return bundle_data;
 	}
@@ -128,6 +129,13 @@ function (event) {
 			set_value(bundle_data.node_data2, midi_presentation[4], 3);
 			set_type(bundle_data.node_data_type3, 'midi-data-type3', midi_presentation[5]);
 			set_value(bundle_data.node_data3, midi_presentation[6], 5);
+		} else if (symbol == "midi_received") {
+			bundle_data = get_bundle_data(event.icon);
+			var class_names = 'midi-received';
+			if (value >= 1) {
+				class_names += ' received';
+			}
+			bundle_data.node_received.attr('class', class_names);
 		}
 	}
 

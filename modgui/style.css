@@ -326,7 +326,7 @@
 #mod-pedal-{{{cns}}} .digit-box.midi_msg_2 { left: 120px; top: 90px; width: 2.5em; }
 #mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 243px; top: 90px; width: 3.92em; }
 
-#mod-pedal-{{{cns}}} .midi-type       { position: absolute; left: 20px; top: 10px; }
+#mod-pedal-{{{cns}}} .midi-type       { position: absolute; left: 100px; top: 10px; }
 #mod-pedal-{{{cns}}} .midi-data-type1 {	position: absolute; left: 20px; top: 142px; }
 #mod-pedal-{{{cns}}} .midi-data-type2 {	position: absolute; left: 110px; top: 142px; }
 #mod-pedal-{{{cns}}} .midi-data-type3 {	position: absolute; left: 243px; top: 142px; }
@@ -362,6 +362,7 @@
 #mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 78px; top: 20px; }
 
 #mod-pedal-{{{cns}}} .midi-type h2 {
+	margin: 0px;
 	position: absolute;
 	font-weight: 900;
 	font-size: 10px;
@@ -423,4 +424,55 @@
 #mod-pedal-{{{cns}}} .midi-data-type3.data .data .image,
 #mod-pedal-{{{cns}}} .midi-data-type3.pitch .pitch .image {
 	background-image: url(/resources/pedals/red-light-on.png{{{ns}}});
+}
+
+/* = MIDI RECEIVED
+================================================ */
+
+#mod-pedal-{{{cns}}} .midi-received {
+	position: absolute;
+	left: 35px;
+	top: 22px;
+	width: 45px;
+	height: 50px;
+}
+
+#mod-pedal-{{{cns}}} .midi-received span {
+	position: absolute;
+	font-weight: bold;
+	font-size: 10px;
+	top: 0px;
+	line-height: 1em;
+	color: black;
+	text-transform: uppercase;
+	width: 45px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 2px solid black;
+}
+
+#mod-pedal-{{{cns}}} .midi-received .image {
+	background-image: url(/resources/pedals/red-light-off.png{{{ns}}});
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+	top: 18px;
+	left: 6.5px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+#mod-pedal-{{{cns}}} .midi-received .image.highlighted {
+	background-image: url(/resources/pedals/red-light-on.png{{{ns}}});
+	opacity: 0.0;
+}
+
+#mod-pedal-{{{cns}}} .midi-received.received .image.highlighted {
+	animation: 0.1s linear 0s 1 blink-{{{cns}}};
+}
+
+@keyframes blink-{{{cns}}} {
+	from { opacity: 1.0; }
+	to { opacity: 0.0; }
 }
