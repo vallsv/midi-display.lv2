@@ -346,8 +346,8 @@
 #mod-pedal-{{{cns}}} .midi-type .channel-aftertouch { left: 60px; top: 40px; }
 #mod-pedal-{{{cns}}} .midi-type .control-change { left: 155px; top: 20px; }
 #mod-pedal-{{{cns}}} .midi-type .program-change { left: 155px; top: 40px; }
-#mod-pedal-{{{cns}}} .midi-type .pitch-bend { left: 230px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-type .system { left: 230px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-type .pitch-bend { left: 238px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-type .system { left: 238px; top: 40px; }
 
 #mod-pedal-{{{cns}}} .midi-data-type1 .channel { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type1 .system { left: 0px; top: 20px; }
@@ -358,8 +358,8 @@
 
 #mod-pedal-{{{cns}}} .midi-data-type3 .pressure { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type3 .velocity { left: 0px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 .pitch { left: 70px; top: 0px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 70px; top: 20px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 .pitch { left: 78px; top: 0px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 78px; top: 20px; }
 
 #mod-pedal-{{{cns}}} .midi-type h2 {
 	position: absolute;
@@ -376,7 +376,7 @@
 #mod-pedal-{{{cns}}} .midi-type h2.note { left: 0px; }
 #mod-pedal-{{{cns}}} .midi-type h2.aftertouch { left: 60px; }
 #mod-pedal-{{{cns}}} .midi-type h2.change { left: 155px; }
-#mod-pedal-{{{cns}}} .midi-type h2.other { left: 230px; }
+#mod-pedal-{{{cns}}} .midi-type h2.other { left: 238px; }
 
 #mod-pedal-{{{cns}}} .midi-type span,
 #mod-pedal-{{{cns}}} .midi-data-type1 span,
@@ -388,7 +388,8 @@
 	left: 35px;
 	top: 11px;
 	line-height: 1em;
-	color: black;
+	color: #202020;
+	text-transform: uppercase;
 }
 
 #mod-pedal-{{{cns}}} .midi-type .image,
