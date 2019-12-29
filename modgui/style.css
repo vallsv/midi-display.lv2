@@ -327,9 +327,9 @@
 #mod-pedal-{{{cns}}} .digit-box.midi_msg_3 { left: 253px; top: 80px; width: 3.92em; }
 
 #mod-pedal-{{{cns}}} .midi-type       { position: absolute; left: 20px; top: 10px; }
-#mod-pedal-{{{cns}}} .midi-data-type1 {	position: absolute; left: 20px; top: 140px; }
-#mod-pedal-{{{cns}}} .midi-data-type2 {	position: absolute; left: 120px; top: 140px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 {	position: absolute; left: 253px; top: 140px; }
+#mod-pedal-{{{cns}}} .midi-data-type1 {	position: absolute; left: 15px; top: 140px; }
+#mod-pedal-{{{cns}}} .midi-data-type2 {	position: absolute; left: 115px; top: 140px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 {	position: absolute; left: 263px; top: 140px; }
 
 #mod-pedal-{{{cns}}} .midi-type > div,
 #mod-pedal-{{{cns}}} .midi-data-type1 > div,
@@ -354,12 +354,12 @@
 
 #mod-pedal-{{{cns}}} .midi-data-type2 .note { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type2 .controller { left: 0px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-data-type2 .program { left: 0px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-data-type2 .program { left: 55px; top: 0px; }
 
 #mod-pedal-{{{cns}}} .midi-data-type3 .pressure { left: 0px; top: 0px; }
 #mod-pedal-{{{cns}}} .midi-data-type3 .velocity { left: 0px; top: 20px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 0px; top: 40px; }
-#mod-pedal-{{{cns}}} .midi-data-type3 .pitch { left: 70px; top: 40px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 .pitch { left: 70px; top: 0px; }
+#mod-pedal-{{{cns}}} .midi-data-type3 .data { left: 70px; top: 20px; }
 
 #mod-pedal-{{{cns}}} .midi-type span,
 #mod-pedal-{{{cns}}} .midi-data-type1 span,
