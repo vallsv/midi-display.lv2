@@ -1,6 +1,6 @@
 # midi-display.lv2
 
-Device based on [LV2](http://lv2plug.in/) to display MIDI events as a [Mod Device](moddevices.com) widget.
+Device based on [LV2](http://lv2plug.in/) to display MIDI events as a [Mod Device](http://moddevices.com) widget.
 
 ![Preview](./modgui/screenshot.png)
 
